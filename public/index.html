@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoLo Media</title>
+    <link rel="icon" href="./img/icono-icono.png">
+    <!-- Seo Google -->
+    <meta name="description" content="Producimos contenido sobre #Tecnología, #Programación, #Marketing, #DevLife y todo #SinTests">
+    <meta name="keywords" content="Podcast, Tecnología, Programación, Marketing">
+    <meta name="author" content="Agustín Ricardo">
+    <!-- Para Facebook -->
+    <meta property="og:title" content="Podcast 'No lo Testeamos'">
+    <meta property="og:image" content="https://nolo-media.web.app/img/para-fb-tw.jpg">
+    <meta property="og:description" content="Producimos contenido sobre #Tecnología, #Programación, #Marketing, #DevLife y todo #SinTests">
+    <meta property="og:type" content="PodcastSeason">
+    <meta property="og:url" content="https://nolo-media.web.app">
+    <!-- Para Twitter -->
+    <meta property="twitter:title" content="Podcast 'No lo Testeamos'">
+    <meta property="twitter:image" content="https://nolo-media.web.app/img/para-fb-tw.jpg">
+    <meta property="twitter:description" content="Producimos contenido sobre #Tecnología, #Programación, #Marketing, #DevLife y todo #SinTests">
+    <meta property="twitter:type" content="PodcastSeason">
+    <meta property="twitter:url" content="https://nolo-media.web.app">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3b365a5b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- Reto semana 2:
+Objetivo: Landing page de un podcast
+Logo, botones a redes sociales, reproductor del ultimo capítulo, covers de otros capítulos
+Tecnologias: Flexbox
+Que espera de este reto: Tags, esquemas, +20 etiquetas html, layout flex -->
+<body>
+    <header>
+        <div class="portada">
+            <img src="./img/portada1920.jpg" alt="" width="100%">
+        </div>
+        <div class="contenido">
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="" width="400px">
+            </div>
+            <div class="descripcion" itemscope itemtype="https://schema.org/PodcastSeason">
+                <h1 class="titulo" style="white-space: pre-wrap" itemprop="episode">
+                    No lo testeamos 
+                    <span>Podcast</span></h1>
+                <h2 style="white-space: pre-wrap" itemprop="abstract">
+                    <i class="fas fa-rocket icon-rocket"></i> Producimos contenido sobre <strong>#Tecnología</strong>, <strong>#Programación</strong>, <strong>#Marketing</strong>, <strong>#DevLife</strong> y todo <strong>#SinTests</strong>
+                    
+                    ¿Qué es eso del mundo IT? 
+                    ¿Qué @#$% hace un desarrollador de software?
+                    ¿Solo viven de noche?
+                    ¿Tienen vida más allá de la computadora? 
+
+                    Descubre estas respuestas y mas en el único podcast en donde te van a contar el lado B del mundo IT.</h2>
+                    <div class="reproductor">
+                        <p itemprop="endDate" class="italic">Último episodio: 26/12/2020</p>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/4ubbYjpps69H36D9yYTsNp" width="50%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media" itemprop="audio"></iframe>
+                    </div>
+                    <div class="redes">
+                    <a href="https://twitter.com/nolomedia" target="_blank"><i class="fab fa-twitter icon-twitter"></i></a>
+                    <a href="spotify:show:74pQ14mr4act8ot0MfJOXA"><i class="fab fa-spotify icon-spotify"></i></a>
+                    <a href="https://www.instagram.com/nolomedia/" target="_blank"><i class="fab fa-instagram icon-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="integrantes">
+            <h2 style="white-space: pre-wrap" itemscope itemtype="https://schema.org/PodcastSeason">
+                <i class="far fa-hand-point-right icon-rocket"></i> <b>Benja:</b> Con su voz sensual y suave... Le encanta la 
+                montaña y el aire libre. Toca instrumentos musicales extraños y 
+                siempre trae serenidad a la mesa del podcast.⁣
+                <a href="https://twitter.com/beliz4r" target="_blank"><i class="fab fa-twitter icon-twitter"></i>@beliz4r</a>
+                
+                <i class="far fa-hand-point-right icon-rocket"></i> <b>Ata:</b> Toca la guitarra, fanatico de Pink Floyd y programador 
+                full-time. Lo podes encontrar fácilmente en comunidades y 
+                eventos TIC de cualquier ciudad que te imagines!
+                <a href="https://twitter.com/4t4sh" target="_blank"><i class="fab fa-twitter icon-twitter"></i>@4t4sh</a>
+
+                <i class="far fa-hand-point-right icon-rocket"></i> <b>Rodri:</b> El CAO de NoLo, o mejor dicho Chief Asador Officer.
+                Mas de 10 años de experiencia en el sector IT, programador de día,
+                padre fulltime y Jr en baile!⁣
+                <a href="https://twitter.com/ArEnYi" target="_blank"><i class="fab fa-twitter icon-twitter"></i>@ArEnYi</a>
+
+            </h2>
+            <img src="./img/integrantes.jfif" alt="" width="700px" itemprop="productionCompany">
+        </div>
+        <div class="integrantes">
+            <img src="./img/integrante-lu.jfif" alt="" width="700px">
+            <h2 style="white-space: pre-wrap">
+                <i class="far fa-hand-point-right icon-rocket"></i> Hola, soy <b>Lu!</b>
+                Edito los podcast de Nolo hasta que me sangran los oídos.
+                
+                En un mundo sin pandemia soy técnica en sonido en teatros de Buenos Aires.
+                
+                Estudié la Lic. en Música y Tecnología en la UNQ y formo parte de un grupo 
+                de investigacion llamado Electropunq donde hacemos desarrollos 
+                tecnológicos aplicados al arte.
+                
+                Hago cursos todos los dias, respiro lifelong
+                learning y cuando no tengo internet
+                soy Luthier experimental.
+                
+                También tengo amig@s (?
+                <a href="https://twitter.com/almenosesraro" target="_blank"><i class="fab fa-twitter icon-twitter"></i>@almenosesraro</a></h2>
+        </div>
+        <div class="fin-temporada">
+            <h3 style="white-space: pre-wrap">
+                Nuestra primera termporada terminó.
+
+                Hasta el próximo año! <i class="far fa-hand-peace"></i> <i class="fas fa-rocket"></i>
+            </h3>
+            <img src="./img/fin-temporada.jfif" alt="" width="700px">
+        </div>
+        <div class="titulo-capitulos">
+            <h3>Les dejamos algunos capítulos para los ansiosos <i class="far fa-laugh-squint"></i></h3>
+        </div>
+        <div class="capitulos">
+            <div class="bloque-cap">
+                <img src="./img/hablemos-de-dinero.jfif" alt="" width="400px">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7pR6a3zrCWTS2eONN8T6eh" width="360px" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="bloque-cap">
+                <img src="./img/necesito-vacaciones.jfif" alt="" width="400px">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/4fafzRnPuyLtCYkNoIIZQw" width="360px" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="bloque-cap">
+                <img src="./img/presion-mental.jfif" alt="" width="400px">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/4vyFE4qhiR0QDBMzWc4B7d" width="360px" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="capitulos bottom-distance">
+            <div class="bloque-cap">
+                <img src="./img/lenguaje-murio.jfif" alt="" width="400px">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/25Fyext8eM0FzYQPqK85EM" width="360px" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="bloque-cap">
+                <img src="./img/mi-portfolio.jfif" alt="" width="400px">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/5X1QZ9CY9hzSSmxxX5wFtS" width="360px" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="bloque-cap">
+                <img src="./img/trabajo-vivir.jfif" alt="" width="400px">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/0f3xGe1attbiJuFgTAXAlO" width="360px" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="end-page">
+            <div class="remeras">
+                <h3>Próximamente <i class="fas fa-bullhorn"></i></h3>
+                <img src="./img/remera-gris.png" alt="" width="250px">
+                <img src="./img/remera2.png" alt="" width="250px">
+            </div>
+            <div class="contact">
+                <h3>Dejá tu consulta! <i class="fas fa-envelope"></i></h3>
+                <form action="">
+                    <label for="">Nombre: </label>
+                    <input type="text" size="25" placeholder="Ingrese su nombre">
+                    <label for="">Email: </label>
+                    <input type="email" size="25" placeholder="Ingrese su email">
+                    <div class="mensaje">
+                        <textarea name="" id="" cols="79" rows="5" placeholder="Dejenos un mensaje"></textarea>
+                        <input type="submit" class="btn-submit">
+                    </div>
+                </form>
+            </div>
+            <div class="redes-footer">
+                <h3>Seguinos en <i class="far fa-thumbs-up"></i>:</h3>
+                <a href="https://twitter.com/nolomedia" target="_blank"><i class="fab fa-twitter icon-twitter"></i></a>
+                <a href="spotify:show:74pQ14mr4act8ot0MfJOXA"><i class="fab fa-spotify icon-spotify"></i></a>
+                <a href="https://www.instagram.com/nolomedia/" target="_blank"><i class="fab fa-instagram icon-instagram"></i></a>
+            </div>
+        </div>
+        <div class="desafio-summerhack">
+            <img src="./img/logo-summerhack.png" alt="" width="80px">
+            <p>#summerhack2021</p>
+        </div>
+    </footer>
+</body>
+</html>

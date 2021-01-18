@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kufam', cursive;
+}
+a {
+    text-decoration: none;
+}
+/* Portada */
+.portada {
+    width: 100%;
+}
+
+/* Contenido */
+.contenido {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.logo img{
+    border-radius: 50%;
+    padding: 10px;
+}
+.descripcion h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+.titulo {
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.titulo span {
+    font-size: 25px;
+    color: #fd5949;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.reproductor {
+    width: 100%;
+    text-align: center;
+}
+.redes {
+    margin-top: 20px;
+    text-align: center;
+}
+.redes a i:hover {
+    color: orangered;
+}
+.italic {
+    font-style: italic;
+}
+
+
+/* Iconos */
+.icon-twitter {
+    color: #00acee;
+    font-size: 50px;
+    padding: 10px;
+}
+.icon-spotify {
+    color: #1db954;
+    font-size: 50px;
+    padding: 10px;
+}
+.icon-instagram {
+    color: #d6249f;
+    font-size: 50px;
+    padding: 10px;
+}
+.icon-rocket {
+    color:orangered;
+    font-size: 25px;
+}
+
+/* Integrantes */
+.integrantes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    padding: 30px;
+}
+.integrantes h2 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.integrantes a i {
+    font-size: 25px;
+}
+
+
+/* Capitulos */
+.fin-temporada {
+    margin-top: 60px;
+    display: flex;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fin-temporada h3{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px;
+}
+.fin-temporada h3 i {
+    color: orangered;
+}
+.titulo-capitulos {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+.titulo-capitulos h3 {
+    font-weight: 200;
+}
+.titulo-capitulos h3 i {
+    color: orangered;
+}
+.capitulos {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.capitulos iframe {
+    padding: 20px;
+    color: red;
+}
+.bloque-cap {
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    width: 400px;
+    margin: 35px;
+    height: 405px;
+    border-radius: 5px;
+}
+.bloque-cap img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bottom-distance {
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+.end-page {
+    display: flex;
+    width: 100%;
+    background-color: #292929;
+    color: white;
+    align-items: flex-start;
+}
+.contact{
+    width: 100%;
+    text-align: center;
+}
+.contact input{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+form {
+    padding: 15px;
+}
+.contact textarea {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact h3 {
+    background-color: orangered;
+}
+.mensaje {
+    display: block;
+    text-align: center;
+}
+.btn-submit {
+    background-color: rgba(255, 69, 0, 0.9);
+    padding: 8px !important;
+    width: 80px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.remeras {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.remeras h3 {
+    text-transform: uppercase;
+    background-color: orangered;
+}
+.remeras i {
+    color: white;
+}
+.remeras img {
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.redes-footer {
+    width: 100%;
+    text-align: center;
+}
+.redes-footer h3 {
+    background-color: orangered;
+}
+.redes-footer a i:hover {
+    color: orangered;
+    cursor: pointer;
+}
+.desafio-summerhack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbd304;
+    border-top: 1px solid white;
+}
+.desafio-summerhack p {
+    display: inline-block;
+    margin: 0;
+    padding: 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #4581eb;
+    font-weight: 800;
+}
+.desafio-summerhack img {
+    display: inline-block;
+}
+.end-page h3 {
+    margin-top: 0;
+    padding: 7px;
+}
