@@ -10,6 +10,9 @@ a {
 .portada {
     width: 100%;
 }
+.portada img {
+    width: 100%;
+}
 
 /* Contenido */
 .contenido {
@@ -22,6 +25,7 @@ a {
 .logo img{
     border-radius: 50%;
     padding: 10px;
+    width: 400px;
 }
 .descripcion h2{
     font-size: 20px;
@@ -41,6 +45,11 @@ a {
 .reproductor {
     width: 100%;
     text-align: center;
+}
+.reproductor iframe {
+    width: 50%;
+    height: 155px;
+    border: none;
 }
 .redes {
     margin-top: 20px;
@@ -84,6 +93,9 @@ a {
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     padding: 30px;
 }
+.integrantes img {
+    width: 700px;
+}
 .integrantes h2 {
     padding: 20px;
     font-size: 20px;
@@ -103,6 +115,9 @@ a {
     align-items: center;
     padding: 30px;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fin-temporada img {
+    width: 700px;
 }
 .fin-temporada h3{
     font-size: 30px;
@@ -140,9 +155,15 @@ a {
     height: 405px;
     border-radius: 5px;
 }
+.bloque-cap iframe {
+    width: 360px;
+    height: 200px;
+    border: none;
+}
 .bloque-cap img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 400px;
 }
 .bottom-distance {
     margin-bottom: 30px;
@@ -191,6 +212,7 @@ form {
     border-radius: 30px;
     color: white;
     cursor: pointer;
+    font-size: 18px;
 }
 .remeras {
     width: 100%;
@@ -207,6 +229,7 @@ form {
 .remeras img {
     border-radius: 30px;
     margin-top: 15px;
+    width: 250px;
 }
 .redes-footer {
     width: 100%;
@@ -225,6 +248,9 @@ form {
     align-items: center;
     background-color: #fbd304;
     border-top: 1px solid white;
+}
+.desafio-summerhack img {
+    width: 80px;
 }
 .desafio-summerhack p {
     display: inline-block;
