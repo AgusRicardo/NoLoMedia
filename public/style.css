@@ -17,7 +17,7 @@ a {
 /* Contenido */
 .contenido {
     display: flex;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     padding: 20px;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,9 @@ a {
     padding: 10px;
     max-width: 400px ;
 }
+.descripcion {
+    text-align: center;
+}
 .descripcion h2{
     font-size: 20px;
     font-weight: 200;
@@ -39,8 +42,10 @@ a {
     font-weight: 400;
     text-transform: capitalize;
     white-space: pre-wrap;
+    margin-bottom: 0;
+    margin-left: 10px;
 }
-.titulo span {
+.descripcion span {
     font-size: 25px;
     color: #fd5949;
     font-weight: 600;
@@ -287,15 +292,20 @@ form {
     padding: 7px;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1440px) {
     .integrantes img {
         width: 500px;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .integrantes img {
+        width: 420px;
     }
     .fin-temporada img {
         max-width: 500px;
     }
 }
-
 @media screen and (max-width: 992px){
     .logo img{
         max-width: 300px ;
