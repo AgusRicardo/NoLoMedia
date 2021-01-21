@@ -308,9 +308,13 @@ form {
     }
 }
 
-@media screen and (max-width: 320px){ 
+@media screen and (max-width: 425px){ 
     .logo img{
         max-width: 250px ;
+    }
+    .reproductor iframe {
+        width: 90%;
+        height: 155px;
     }
     .integrantes img {
         width: 250px;
@@ -339,7 +343,7 @@ form {
         width: 250px;
     }
     .bloque-cap iframe {
-        width: 224px;
+        width: 90%;
         height: 152px;
         padding: 12;
     }
