@@ -300,7 +300,10 @@ form {
 
 @media screen and (max-width: 1366px){
     .integrantes img {
-        width: 420px;
+        width: 415px;
+    }
+    .descripcion h2 {
+        margin-right: 110px;
     }
     .fin-temporada img {
         max-width: 500px;
