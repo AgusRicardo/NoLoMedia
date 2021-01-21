@@ -17,24 +17,28 @@ a {
 /* Contenido */
 .contenido {
     display: flex;
+    flex-flow: wrap;
     padding: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
 .logo img{
+    text-align: center;
     border-radius: 50%;
     padding: 10px;
-    width: 400px;
+    max-width: 400px ;
 }
 .descripcion h2{
     font-size: 20px;
     font-weight: 200;
+    white-space: pre-wrap;
 }
 .titulo {
     text-align: center;
     font-weight: 400;
     text-transform: capitalize;
+    white-space: pre-wrap;
 }
 .titulo span {
     font-size: 25px;
@@ -67,7 +71,7 @@ a {
 .icon-twitter {
     color: #00acee;
     font-size: 50px;
-    padding: 10px;
+    display: inline;
 }
 .icon-spotify {
     color: #1db954;
@@ -87,11 +91,15 @@ a {
 /* Integrantes */
 .integrantes {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     margin-top: 40px;
     align-items: center;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     padding: 30px;
+}
+.integrantes p {
+    margin: 0;
 }
 .integrantes img {
     width: 700px;
@@ -100,9 +108,11 @@ a {
     padding: 20px;
     font-size: 20px;
     font-weight: 200;
+    white-space: pre-wrap;
 }
 .integrantes a i {
     font-size: 25px;
+    padding: 0;
 }
 
 
@@ -110,6 +120,7 @@ a {
 .fin-temporada {
     margin-top: 60px;
     display: flex;
+    flex-flow: row wrap;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     justify-content: center;
     align-items: center;
@@ -117,12 +128,14 @@ a {
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
 .fin-temporada img {
-    width: 700px;
+    height: auto;
+    max-width: 700px;
 }
 .fin-temporada h3{
     font-size: 30px;
     font-weight: 300;
     padding: 20px;
+    white-space: pre-wrap;
 }
 .fin-temporada h3 i {
     color: orangered;
@@ -173,13 +186,18 @@ a {
 /* Footer */
 .end-page {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
     background-color: #292929;
     color: white;
-    align-items: flex-start;
 }
 .contact{
-    width: 100%;
+    text-align: center;
+    flex-flow: wrap;
+    flex-grow: 3;
+}
+.contact div {
     text-align: center;
 }
 .contact input{
@@ -188,14 +206,11 @@ a {
     padding: 5px;
 }
 form {
-    padding: 15px;
+    margin-bottom: 20px;
 }
 .contact textarea {
-    display: block;
-    margin: 10px;
     padding: 5px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 75%;
 }
 .contact h3 {
     background-color: orangered;
@@ -215,9 +230,11 @@ form {
     font-size: 18px;
 }
 .remeras {
-    width: 100%;
+    flex-flow: wrap;
     display: inline-block;
     text-align: center;
+    flex-grow: 1;
+    margin-bottom: 15px;
 }
 .remeras h3 {
     text-transform: uppercase;
@@ -232,8 +249,9 @@ form {
     width: 250px;
 }
 .redes-footer {
-    width: 100%;
     text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 2;
 }
 .redes-footer h3 {
     background-color: orangered;
@@ -267,4 +285,65 @@ form {
 .end-page h3 {
     margin-top: 0;
     padding: 7px;
+}
+
+@media screen and (max-width: 1366px){
+    .integrantes img {
+        width: 500px;
+    }
+    .fin-temporada img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .logo img{
+        max-width: 300px ;
+    }
+    .integrantes img {
+        width: 350px;
+    }
+    .fin-temporada img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 320px){ 
+    .logo img{
+        max-width: 250px ;
+    }
+    .integrantes img {
+        width: 250px;
+    }
+    .fin-temporada img {
+        max-width: 250px;
+    }
+    .titulo {
+        width: 100%;
+        white-space: normal;
+    }
+    .descripcion h2 {
+        white-space: normal;
+    }
+    .integrantes h2 {
+        white-space: normal;
+    }
+    .fin-temporada h3{
+        white-space: normal;
+    }
+    .bloque-cap {
+        width: 250px;
+        height: 315px;
+    }
+    .bloque-cap img {
+        width: 250px;
+    }
+    .bloque-cap iframe {
+        width: 224px;
+        height: 152px;
+        padding: 12;
+    }
+    .desafio-summerhack p {
+        font-size: 20px;
+    }
 }
